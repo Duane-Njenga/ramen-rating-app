@@ -1,38 +1,37 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset=" UTF-8"/>
-        <meta name = "viewport" content="width = device-width, initial-scale =1.0"/>
-        <link rel="stylesheet" href="styles.css">
-        <title>Ramen Rater</title>
-    </head>
-    <body>
-        <h1>Ramen rater app</h1>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ramen Rater App</title>
+  <link rel = 'stylesheet' href="./styles.css">
+</head>
+<body>
 
+  <h1>Ramen Rater</h1>
+  <div id="ramen-menu"></div>
 
+  <h2>Ramen Details</h2>
+  <div id="ramen-detail">
+    <img id="detail-image" src="" alt="Select a ramen" />
+    <h3 id="name"></h3>
+    <p id="restaurant"></p>
+    <p id="rating"></p>
+    <p id="comment"></p>
+  </div>
 
-        <div id="ramen-menu">
+  <h2>Add New Ramen</h2>
+  <form id="ramen-form">
+    <input type="text" id="new-name" placeholder="Name"  required/>
+    <input type="text" id="new-restaurant" placeholder="Restaurant"  required/>
+    <input type="number" id="new-rating" placeholder="Rating (1-5)" min="1" max="10"  />
+    <input type="text" id="new-comment" placeholder="Comment" />
+    <input type="url" id="new-image-path" placeholder="Image URL" />
+    <p id = 'or'>Or</p>
+    <input type="file" id="new-image-file" accept="image/*" />
+    <input id = "create" type="submit" title="create"/>
+  </form>
 
-        </div>
-
-
-        <div class="details" id="details">
-            <h2 class="name"></h2>
-            <p class="restaurant"></p>
-            <p class="rating"></p>
-            <p class="comment"></p>
-        </div>
-
-        <form id="ramenForm">
-            <input type="text" name="name" placeholder="Name" required />
-            <input type="text" name="restaurant" placeholder="Restaurant" required />
-            <input type="text" name="image" placeholder="Image"  />
-            <input type="number" name="rating" placeholder="Rating"  />
-            <input name="comment" placeholder="Comment" />
-            <input id = "create" type="submit" title="create"/>
-            <button>Delete</button>
-        </form>
-
-    </body>
-    <script src = "index.js"></script>
+  <script src="./index.js"></script>
+</body>
 </html>

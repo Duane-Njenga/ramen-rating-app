@@ -8,7 +8,7 @@ body {
 }
 
 h1, h2 {
-  color: #ff6347;
+  color: black;
   font-weight: bold;
   text-decoration: underline;
 }
@@ -38,23 +38,20 @@ h1, h2 {
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-#ramen-menu img:hover {
-  transform: scale(1.1);
-  box-shadow: 0 4px 8px rgba(106, 94, 94, 0.2);
-}
-
 #ramen-detail {
   margin-top: 20px;
-  padding: 20px;
+  padding: 10px;
   border: 2px solid #000;
   border-radius: 12px;
-  background-color: #fff;
+  background-color: #f2a3a3;
   box-shadow: 0 4px 8px rgba(73, 65, 65, 0.705);
 }
 
+
 #ramen-detail img {
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
+  align-content: center; 
   object-fit: cover;
   border-radius: 12px;
   margin-bottom: 10px;

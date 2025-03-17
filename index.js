@@ -26,7 +26,7 @@ function displayRamens() {
 function handleClick(ramen) {
     currentRamenId =ramen.id;
     document.getElementById('detail-image').src = ramen.image;
-    document.getElementById('name').textContent = ramen.name;
+    document.getElementById('name').textContent = `Name: ${ramen.name}`;
     document.getElementById('restaurant').textContent = `Restaurant: ${ramen.restaurant}`;
     document.getElementById('rating').textContent = `Rating: ${ramen.rating}`;
     document.getElementById('comment').textContent = `Comment: ${ramen.comment || 'No comment'}`;
